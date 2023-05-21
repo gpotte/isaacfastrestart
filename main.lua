@@ -90,13 +90,13 @@ function PrintRooms()
     -- Print the floor contents if the conditions are not met
     elseif planetariumFound == false or libraryFound == false or treasureRoom < 3 then
         if libraryFound then
-            Isaac.RenderText("Library found on this floor!", 100, 100, 255, 255, 255, 255)
+            Isaac.RenderText("Library found on this floor!", 100, 100, 1, 1, 1, 255)
         end
         if planetariumFound then
-            Isaac.RenderText("Planetarium found on this floor!", 100, 150, 255, 255, 255, 255)
+            Isaac.RenderText("Planetarium found on this floor!", 100, 150, 1, 1, 1, 255)
         end
         if treasureRoom >= 3 then
-            Isaac.RenderText("Item is tier 3 or higher", 100, 200, 255, 255, 255, 255)
+            Isaac.RenderText("Item is tier 3 or higher", 100, 200, 1, 1, 1, 255)
         end
     end
 end
